@@ -7,12 +7,12 @@
 #include "main.h"
 
 
-extern SPI_HandleTypeDef hspi1;
-#define ST7735_SPI_PORT hspi1
+extern SPI_HandleTypeDef hspi2;
+#define ST7735_SPI_PORT hspi2
 
 /****** PIN DEFINES ******/
-#define CS_PORT GPIOA
-#define CS_PIN  GPIO_PIN_4
+#define CS_PORT screen_cs_GPIO_Port
+#define CS_PIN  screen_cs_Pin
 #define DC_PORT screen_DC_GPIO_Port
 #define DC_PIN  screen_DC_Pin
 #define RST_PORT screen_reset_GPIO_Port
