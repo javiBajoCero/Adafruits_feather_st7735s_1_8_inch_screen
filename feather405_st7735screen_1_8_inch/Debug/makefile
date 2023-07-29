@@ -60,8 +60,8 @@ all: main-build
 main-build: feather405_st7735screen_1_8_inch.elf secondary-outputs
 
 # Tool invocations
-feather405_st7735screen_1_8_inch.elf feather405_st7735screen_1_8_inch.map: $(OBJS) $(USER_OBJS) C:\Users\Javier\Desktop\turulo_luminoso\feather405_st7735screen_1_8_inch\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "feather405_st7735screen_1_8_inch.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\turulo_luminoso\feather405_st7735screen_1_8_inch\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="feather405_st7735screen_1_8_inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+feather405_st7735screen_1_8_inch.elf feather405_st7735screen_1_8_inch.map: $(OBJS) $(USER_OBJS) C:\Users\Javier\Documents\GitHub\Adafruits_feather_st7735s_1_8_inch_screen\feather405_st7735screen_1_8_inch\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "feather405_st7735screen_1_8_inch.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Javier\Documents\GitHub\Adafruits_feather_st7735s_1_8_inch_screen\feather405_st7735screen_1_8_inch\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="feather405_st7735screen_1_8_inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
